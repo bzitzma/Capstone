@@ -1,0 +1,66 @@
+/* Body Styles */
+
+body {
+	position: relative;
+	margin-top: 150px;
+	margin-bottom: 54px;
+}
+
+body::after {
+	content: "";
+	background-color: #076799;
+	opacity: 0.50;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+
+/* Header Styles */
+
+header {
+	height: 150px;
+    border: 1px solid #e7e7e7;
+	background-color: white;
+}
+
+header .logo {
+	position: relative;
+}
+
+header > .logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* Other Styles */
+
+main {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	background-color: white;
+	height: 100%;
+	overflow: auto;
+}
+
+footer {
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+	font-size: .85em;
+}
+
+
+/* Media Query Styles */
+
+@media only screen and (max-width: 992px) {
+	.logo {
+		width: 200px !important;
+	}
+}
+
